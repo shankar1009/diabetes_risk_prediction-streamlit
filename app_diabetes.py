@@ -22,7 +22,6 @@ for column in df.columns.drop(['Age', 'Gender', 'class']):
     df[column] = df[column].replace({'No': 0, 'Yes': 1})
 
 st.title("DIABETES CHECKUP")
-st.area_chart(df)
 x=df.drop(['class'],axis=1)
 y=df.iloc[:,-1]
 
